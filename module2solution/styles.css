@@ -1,0 +1,55 @@
+<style>
+* {
+  box-sizing:border-box;
+  border-color: black;
+  border:1px;
+}
+h2 { color:gray;
+  text-align: right;
+  }
+  div{ margin:3px;
+    }
+
+.left {
+  background-color:#6a5acd;
+  padding:20px;
+  float:left;
+  width:30%; /* The width is 30%, by default */
+}
+
+.main {
+  background-color:#6a5acd;
+  padding:20px;
+  float:left;
+  width:20%; /* The width is 20%, by default */
+}
+
+.right {
+  background-color:#6a5acd;
+  padding:20px;
+  float:left;
+  width:30%; /* The width is 30%, by default */
+}
+
+/* Use a media query to add a break point at 992px: */
+@media screen and (max-width: 992px) {
+  .left, .main,  {
+    width:100%; /* The width is 100%, when the viewport is smaller than 992px */
+  }
+  .right {
+  	width:70%;/* The width is 100%, when the viewport is smaller than 992px */
+  }
+}
+/* Use a media query to add a break point at 768px: */
+@media screen and (max-width:767px) {
+  .left {
+    width:100%; /* The width is 100%, when the viewport is 767px or smaller */
+  }
+   .main {
+    width:100%; /* The width is 100%, when the viewport is 767px or smaller */
+  }
+   .right {
+    width:100%; /* The width is 100%, when the viewport is 767px or smaller */
+  }
+}
+</style>
